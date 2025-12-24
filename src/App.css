@@ -255,4 +255,7 @@ html, body {
     margin-top: 0;
 }
 
+.header-h1-text{
+    white-space: nowrap
+}
 }
