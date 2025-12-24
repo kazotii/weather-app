@@ -34,7 +34,7 @@ body{
 }
 
 input[type="text"]{
-    font-family: 'DM Sans'
+    font-family: 'DM Sans';
 }
 
 input::placeholder{
