@@ -33,6 +33,10 @@ body{
     font-family: 'DM Sans';
 }
 
+input[type="text"]{
+    font-family: 'DM Sans'
+}
+
 input::placeholder{
     color: #fff;
     font-family: 'DM Sans';
