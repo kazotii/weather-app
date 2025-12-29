@@ -1,11 +1,10 @@
-import {useEffect, useState} from "react";
-import WeatherCard from "./components/WeatherCard";
-import Search from "./components/Search";
-import { useWeatherStore } from "./useWeatherStore";
+import WeatherCard from "./WeatherCard";
+import Search from "./Search";
+import { useWeatherStore } from "../functions/useWeatherStore";
 
-function App(){
+function App() {
   const weather = useWeatherStore((state) => state.weather);
-  const error = useWeatherStore((state) => state.error)
+  const error = useWeatherStore((state) => state.error);
   return (
     <div className="weather-card">
       <h1 className="header-h1-text">How's the sky looking today?</h1>
