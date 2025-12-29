@@ -16,7 +16,7 @@ function WeatherCard({ data }: { data: WeatherData }) {
           <p className="date">{date}</p>
         </div>
         <div className="right-main-weather">
-          <h1 className="temp-name">Temp: {data.main.temp}°</h1>
+          <h2 className="temp-name">Temp: {data.main.temp}°</h2>
           <p>Weather: {data.weather[0].description}</p>
           <img
             src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
