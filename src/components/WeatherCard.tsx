@@ -1,4 +1,4 @@
-function WeatherCard({data}){
+function WeatherCard({data}:{data:any}){
     const date = new Date().toLocaleDateString('en-US', { weekday: 'long', day: 'numeric', month: 'long' });
     return(
         <div className="weather-result">
