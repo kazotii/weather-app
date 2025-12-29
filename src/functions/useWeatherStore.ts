@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import { persist } from "zustand/middleware";
 
 export interface WeatherData {
   name: string;
@@ -31,7 +32,7 @@ interface WeatherStore {
 }
 
 const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
-export const useWeatherStore = create<WeatherStore>((set, get) => ({
+export const useWeatherStore = create<WeatherStore>()(persist((set, get) => ({
   city: "",
   weather: null,
   error: null,
@@ -52,4 +53,4 @@ export const useWeatherStore = create<WeatherStore>((set, get) => ({
       set({ weather: null });
     }
   },
-}));
+}), {name:"weather-storage"}))
